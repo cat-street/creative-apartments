@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/creative-apartments/static/css/main.7b360bf9.chunk.css",
+    "main.js": "/creative-apartments/static/js/main.be0f6d01.chunk.js",
+    "main.js.map": "/creative-apartments/static/js/main.be0f6d01.chunk.js.map",
+    "runtime-main.js": "/creative-apartments/static/js/runtime-main.43b4e80a.js",
+    "runtime-main.js.map": "/creative-apartments/static/js/runtime-main.43b4e80a.js.map",
+    "static/js/2.4ee06ac3.chunk.js": "/creative-apartments/static/js/2.4ee06ac3.chunk.js",
+    "static/js/2.4ee06ac3.chunk.js.map": "/creative-apartments/static/js/2.4ee06ac3.chunk.js.map",
+    "index.html": "/creative-apartments/index.html",
+    "static/css/main.7b360bf9.chunk.css.map": "/creative-apartments/static/css/main.7b360bf9.chunk.css.map",
+    "static/js/2.4ee06ac3.chunk.js.LICENSE.txt": "/creative-apartments/static/js/2.4ee06ac3.chunk.js.LICENSE.txt",
+    "static/media/image_1.29dd31ec.jpg": "/creative-apartments/static/media/image_1.29dd31ec.jpg",
+    "static/media/image_2.305ae742.jpg": "/creative-apartments/static/media/image_2.305ae742.jpg",
+    "static/media/image_3.680d15ea.jpg": "/creative-apartments/static/media/image_3.680d15ea.jpg",
+    "static/media/index.scss": "/creative-apartments/static/media/roboto-regular.59d18e16.woff",
+    "static/media/SingleApartment.module.scss": "/creative-apartments/static/media/star_filled.ebc6304b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43b4e80a.js",
+    "static/js/2.4ee06ac3.chunk.js",
+    "static/css/main.7b360bf9.chunk.css",
+    "static/js/main.be0f6d01.chunk.js"
+  ]
+}
