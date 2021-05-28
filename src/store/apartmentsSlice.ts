@@ -1,6 +1,6 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Apartment, ApartmentsState } from './types';
+import { Apartment, ApartmentsState } from '../types/types';
 
 import entities from 'mock/entities.json';
 import images from 'mock/images';
@@ -14,14 +14,19 @@ const loadInitialData = createAsyncThunk('apartments/fetchAll', async () => {
   await new Promise(resolve => setTimeout(resolve, 2000));
   const response = entities.response;
   return response.reduce((red: Apartment[], el) => {
-    return red.concat({ ...el, image: images[el.id], favorites: false });
+    return red.concat({ ...el, image: images[el.id - 1], favorites: false });
   }, []);
 });
 
 const apartmentSlice = createSlice({
   name: 'apartments',
   initialState,
-  reducers: {},
+  reducers: {
+    toggleFavorites(state, action: PayloadAction<number>) {
+      const apartment = state.items.find((el) => el.id === action.payload);
+      if (apartment) apartment.favorites = !apartment.favorites;
+    }
+  },
   extraReducers: (builder) => {
     builder
       .addCase(loadInitialData.pending, (state, _) => {
@@ -36,4 +41,5 @@ const apartmentSlice = createSlice({
 
 export default apartmentSlice.reducer;
 
+export const { toggleFavorites } = apartmentSlice.actions;
 export { loadInitialData };

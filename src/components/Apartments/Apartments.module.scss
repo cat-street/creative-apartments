@@ -2,78 +2,10 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-
-  &__item {
-    position: relative;
-    border: 1px solid #fff;
-  }
-
-  &__image {
-    max-width: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  &__star {
-    width: 40px;
-    height: 40px;
-
-    position: absolute;
-    top: 18px;
-    right: 18px;
-
-    transition: all 100ms ease-out;
-    cursor: pointer;
-
-    &_empty {
-      background: url('../../assets/star_empty.svg') center center / cover no-repeat;;
-    }
-
-    &:hover, &_filled {
-      background: url('../../assets/star_filled.svg') center center / cover no-repeat;;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    padding: 16px;
-
-    font-size: 20px;
-    font-weight: 500;
-
-    background-color: #eee;
-  }
-
-  &__description {
-    padding: 16px;
-  }
-
-  &__info {
-    margin: 0 0 8px;
-    font-size: 15px;
-  }
-
-  &__agent {
-    padding: 10px 5px;
-
-    font-size: 14px;
-    text-align: center;
-
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
 }
 
 @media (min-width: 1100px) {
   .apartments {
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-
-    &__title {
-      font-size: 24px;
-    }
-
-    &__info {
-      font-size: 16px;
-    }
   }
 }
