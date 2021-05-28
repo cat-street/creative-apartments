@@ -9,9 +9,6 @@ type Props = {
 };
 
 const SingleApartment = ({ item, onFavorite }: Props) => {
-  const { city, street, house, room } = item.attributes.address;
-  const { first_name, middle_name, last_name } = item.relationships.attributes;
-
   const handleStarClick = () => {
     onFavorite(item.id);
   }
@@ -37,7 +34,7 @@ const SingleApartment = ({ item, onFavorite }: Props) => {
         <ul>
           <li className={styles.apartments__info}>
             <strong>Адрес:</strong>{' '}
-            {formatAddress({ city, street, house, room })}
+            {formatAddress(item.attributes.address)}
           </li>
           <li className={styles.apartments__info}>
             <strong>Комнат:</strong> {item.attributes.rooms}
@@ -47,7 +44,7 @@ const SingleApartment = ({ item, onFavorite }: Props) => {
           </li>
           <li className={styles.apartments__agent}>
             <strong>Агент:</strong>{' '}
-            {formatName({ first_name, middle_name, last_name })}
+            {formatName(item.relationships.attributes)}
           </li>
         </ul>
       </div>

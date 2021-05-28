@@ -11,4 +11,4 @@ export type AppDispatch = typeof store.dispatch;
 
 export default store;
 
-export { loadInitialData } from './apartmentsSlice';
+export { toggleFavorites, loadInitialData } from './apartmentsSlice';

@@ -11,7 +11,7 @@ const initialState: ApartmentsState = {
 };
 
 const loadInitialData = createAsyncThunk('apartments/fetchAll', async () => {
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  await new Promise(resolve => setTimeout(resolve, 1000));
   const response = entities.response;
   return response.reduce((red: Apartment[], el) => {
     return red.concat({ ...el, image: images[el.id - 1], favorites: false });

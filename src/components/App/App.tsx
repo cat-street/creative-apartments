@@ -3,8 +3,8 @@ import { useAppDispatch, useAppSelector } from 'hooks/storeHooks';
 
 import Apartments from 'components/Apartments/Apartments';
 import Header from 'components/Header/Header';
-import { loadInitialData } from 'store/store';
-import { toggleFavorites } from 'store/apartmentsSlice';
+import { toggleFavorites, loadInitialData } from 'store/store';
+import Spinner from 'components/Spinner/Spinner';
 
 function App() {
   const apartments = useAppSelector((state) => state.items);
@@ -22,7 +22,14 @@ function App() {
   return (
     <>
       <Header />
-      <Apartments items={apartments} loading={loading} onFavorite={handleFavorite} />
+      {loading ? (
+        <Spinner />
+      ) : (
+        <Apartments
+          items={apartments}
+          onFavorite={handleFavorite}
+        />
+      )}
     </>
   );
 }
