@@ -1,0 +1,40 @@
+.apartments {
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 16px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    background-color: #eee;
+  }
+
+  &__description {
+    padding: 16px 16px 32px;
+  }
+
+  &__info {
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+
+  &__agent {
+    padding: 10px 5px;
+
+    font-size: 14px;
+    text-align: center;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}
