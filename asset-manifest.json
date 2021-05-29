@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/creative-apartments/static/css/main.aebf3fb1.chunk.css",
-    "main.js": "/creative-apartments/static/js/main.be0f6d01.chunk.js",
-    "main.js.map": "/creative-apartments/static/js/main.be0f6d01.chunk.js.map",
+    "main.css": "/creative-apartments/static/css/main.c89c6ffa.chunk.css",
+    "main.js": "/creative-apartments/static/js/main.d97042f2.chunk.js",
+    "main.js.map": "/creative-apartments/static/js/main.d97042f2.chunk.js.map",
     "runtime-main.js": "/creative-apartments/static/js/runtime-main.43b4e80a.js",
     "runtime-main.js.map": "/creative-apartments/static/js/runtime-main.43b4e80a.js.map",
     "static/js/2.4ee06ac3.chunk.js": "/creative-apartments/static/js/2.4ee06ac3.chunk.js",
     "static/js/2.4ee06ac3.chunk.js.map": "/creative-apartments/static/js/2.4ee06ac3.chunk.js.map",
     "index.html": "/creative-apartments/index.html",
-    "static/css/main.aebf3fb1.chunk.css.map": "/creative-apartments/static/css/main.aebf3fb1.chunk.css.map",
+    "static/css/main.c89c6ffa.chunk.css.map": "/creative-apartments/static/css/main.c89c6ffa.chunk.css.map",
     "static/js/2.4ee06ac3.chunk.js.LICENSE.txt": "/creative-apartments/static/js/2.4ee06ac3.chunk.js.LICENSE.txt",
     "static/media/image_1.29dd31ec.jpg": "/creative-apartments/static/media/image_1.29dd31ec.jpg",
     "static/media/image_2.305ae742.jpg": "/creative-apartments/static/media/image_2.305ae742.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.43b4e80a.js",
     "static/js/2.4ee06ac3.chunk.js",
-    "static/css/main.aebf3fb1.chunk.css",
-    "static/js/main.be0f6d01.chunk.js"
+    "static/css/main.c89c6ffa.chunk.css",
+    "static/js/main.d97042f2.chunk.js"
   ]
 }
