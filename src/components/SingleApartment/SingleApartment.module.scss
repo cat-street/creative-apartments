@@ -22,15 +22,14 @@
 
     border: 0;
 
-    transition: all 100ms ease-out;
     cursor: pointer;
 
     &_empty {
-      background: url('../../assets/star_empty.svg') center center / cover no-repeat;;
+      background: url('../../assets/star_empty.svg') center center / cover no-repeat;
     }
 
-    &:hover, &_filled {
-      background: url('../../assets/star_filled.svg') center center / cover no-repeat;;
+    &:hover, &:active, &_filled {
+      background: url('../../assets/star_filled.svg') center center / cover no-repeat;
     }
   }
 
