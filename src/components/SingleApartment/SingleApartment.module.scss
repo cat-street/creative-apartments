@@ -28,7 +28,7 @@
       background: url('../../assets/star_empty.svg') center center / cover no-repeat;
     }
 
-    &:hover, &:active, &_filled {
+    &:hover, &_filled {
       background: url('../../assets/star_filled.svg') center center / cover no-repeat;
     }
   }
