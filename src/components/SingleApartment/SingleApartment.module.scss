@@ -24,12 +24,17 @@
 
     cursor: pointer;
 
+    background-color: transparent;
+    background-position: center;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+
     &_empty {
-      background: url('../../assets/star_empty.svg') center center / cover no-repeat;
+      background-image: url('../../assets/star_empty.svg');
     }
 
-    &:hover, &_filled {
-      background: url('../../assets/star_filled.svg') center center / cover no-repeat;
+    &_filled {
+      background-image: url('../../assets/star_filled.svg');
     }
   }
 
